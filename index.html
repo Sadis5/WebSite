@@ -9,6 +9,7 @@
   </head>
   <body>
     <header>
+      <div class="menu-burger"></div>
       <img src="./img/logo.avif" alt="" class="logo" />
       <nav>
         <a href="https://tpverstak.ru/flex-cheatsheet" target="_blank"
@@ -27,13 +28,70 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint?
         </p>
       </div>
-      <div class="card card-1">
+      <div class="card-block">
+        <input type="checkbox" id="close" />
+
+        <div class="card card-1">
+          <label class="close" for="close"></label>
+          <h1>Hello World!</h1>
+          <img src="./img/5927911.gif" alt="" class="img" />
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            sint?
+          </p>
+        </div>
+        <div class="card card-1 card-hidden">
+          <label class="close" for="close"></label>
+          <h1>Яфа Шист</h1>
+          <img src="./img/preview.gif" alt="" class="img" />
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            sint?
+          </p>
+        </div>
+      </div>
+      <div class="card card-2">
         <h1>Hello World!</h1>
-        <img src="./img/5927911.gif" alt="" class="img" />
+        <img src="./img/nyancat.webp" alt="" class="img" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint?
+        </p>
+      </div>
+      <div class="card card-3">
+        <h1>Hello World!</h1>
+        <img src="./img/moonsea.gif" alt="" class="img" />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint?
         </p>
       </div>
     </main>
+    <form action="">
+      <h2>Форма отправки</h2>
+      <div class="form-input">
+        <h3 class="form-input__title">Ваше имя</h3>
+        <input type="" />
+      </div>
+      <h2>Форма отправки</h2>
+      <div class="form-input">
+        <h3 class="form-input__title">Email</h3>
+        <input type="" />
+      </div>
+      <h2>Форма отправки</h2>
+      <div class="form-input">
+        <h3 class="form-input__title">Пароль</h3>
+        <input type="" />
+      </div>
+      <h2>Форма отправки</h2>
+      <div class="form-input">
+        <label for="check" class="form-input__title">Чекбокс</label>
+        <input type="checkbox" id="check" />
+        <div class="hide-block"></div>
+        <div class="hide-block hide-block-1"></div>
+        <div class="hide-block hide-block-1 hide-block-2"></div>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
   </body>
 </html>
