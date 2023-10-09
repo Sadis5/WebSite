@@ -77,6 +77,8 @@ main {
   margin-top: 20px;
   gap: 30px;
   flex-wrap: wrap;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .card-2 {
   background: linear-gradient(250deg, rgb(255, 0, 0), rgb(204, 0, 255));
@@ -141,7 +143,6 @@ form {
 }
 #close:checked ~ .card-hidden {
   opacity: 0;
-  transition: 1s;
   pointer-events: none;
 }
 #close {
@@ -151,10 +152,16 @@ form {
   display: none;
 }
 .card-hidden {
+  transition: 1s;
   position: absolute;
   top: 0;
   pointer-events: all;
 }
 .card-block {
   position: relative;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0px 20px;
+  }
 }
